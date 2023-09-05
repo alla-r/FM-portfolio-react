@@ -5,13 +5,12 @@ import profileImageMobile from "../../assets/images/image-profile-mobile.webp";
 import "./HeroSection.scss";
 
 const HeroSection = () => {
-  console.log(constants);
   return (
     <>
       <div className="hero__content-wrapper container">
-        <div className="hero__content">
+        <div className="hero__content-info">
           <h1>
-            Nice to meet you! I&apos;m <span>Adam Keyes</span>.
+            Nice to meet you! I&apos;m <strong>Adam Keyes</strong>.
           </h1>
           <h2>{constants.HERO_DESCRIPTION}</h2>
           <button className="hero__contact-button">
