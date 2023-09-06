@@ -5,12 +5,14 @@ import profileImageMobile from "../../assets/images/image-profile-mobile.webp";
 import "./HeroSection.scss";
 
 const HeroSection = () => {
+  //TODO add circles
   return (
-    <>
+    <div className="hero">
       <div className="hero__content-wrapper container">
         <div className="hero__content-info">
           <h1>
-            Nice to meet you! I&apos;m <strong>Adam Keyes</strong>.
+            Nice to
+            <br /> meet you! I&apos;m <strong>Adam Keyes</strong>.
           </h1>
           <h2>{constants.HERO_DESCRIPTION}</h2>
           <button className="hero__contact-button">
@@ -19,7 +21,7 @@ const HeroSection = () => {
         </div>
 
         <picture>
-          <source media="(min-width: 62.5em)" srcSet={profileImageDesktop} />
+          <source media="(min-width: 63.5em)" srcSet={profileImageDesktop} />
           <source media="(min-width: 37.5em)" srcSet={profileImageTablet} />
           <img
             className="hero__profile-image"
@@ -28,7 +30,7 @@ const HeroSection = () => {
           />
         </picture>
       </div>
-    </>
+    </div>
   );
 };
 

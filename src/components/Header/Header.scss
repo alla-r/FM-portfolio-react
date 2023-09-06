@@ -40,12 +40,12 @@ header {
 }
 
 /* DESKTOP > 1000px */
-@media only screen and (min-width: 62.5em) {
+@media only screen and (min-width: 63.5em) {
   header {
     margin-top: 39px;
 
     .header__nav {
       padding-right: 32px;
-  }
+    }
   }
 }

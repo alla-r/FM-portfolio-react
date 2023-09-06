@@ -20,11 +20,7 @@ const Header = () => {
             aria-labelledby={id}
           >
             <title id={id}>{title}</title>
-            <path
-              fill="#FFF"
-              fillRule={fillRule}
-              d={d}
-            />
+            <path fill="#FFF" fillRule={fillRule} d={d} />
           </svg>
         </a>
       );
