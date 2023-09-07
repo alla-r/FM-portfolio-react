@@ -1,4 +1,5 @@
 import { SKILLS_DATA } from "../../constants";
+import Rings from "../../assets/images/pattern-rings.svg";
 import "./SkillsSection.scss";
 
 const SkillsSection = () => {
@@ -12,12 +13,11 @@ const SkillsSection = () => {
   });
 
   return (
-    <>
-      <section className="skills container">
-        <h2 className="visually-hidden">Skills & Experience</h2>
-        <div className="skills-wrapper">{skills}</div>
-      </section>
-    </>
+    <section className="skills container">
+      <h2 className="visually-hidden">Skills & Experience</h2>
+      <div className="skills--wrapper">{skills}</div>
+      <img className="skills--rings" src={Rings} alt="rings" />
+    </section>
   );
 };
 
