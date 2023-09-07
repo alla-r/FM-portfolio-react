@@ -22,8 +22,8 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: var(--color-black, #000);
+  color: var(--color-white, #FFF);
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -35,15 +35,15 @@ a {
 }
 
 a:hover {
-  color: var(--color-green);
+  color: var(--color-green, #4EE1A0);
 }
 
 a > svg path {
-  transition: fill var(--transition);
+  transition: fill var(--transition, 250ms ease-in-out);
 }
 
 a:hover > svg path {
-  fill: var(--color-green);
+  fill: var(--color-green, #4EE1A0);
 }
 
 button {

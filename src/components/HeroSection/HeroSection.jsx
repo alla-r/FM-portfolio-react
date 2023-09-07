@@ -7,7 +7,7 @@ import "./HeroSection.scss";
 const HeroSection = () => {
   //TODO add circles
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero__content-wrapper container">
         <div className="hero__content-info">
           <h1>
@@ -30,7 +30,7 @@ const HeroSection = () => {
           />
         </picture>
       </div>
-    </div>
+    </section>
   );
 };
 

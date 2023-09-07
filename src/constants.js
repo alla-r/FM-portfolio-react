@@ -38,3 +38,36 @@ export const HEADER_NAV_LINK_CONFIG = [
 
 export const HERO_DESCRIPTION = "Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.";
 export const HERO_BUTTON = "Contact me";
+
+export const SKILLS_DATA = [
+  {
+    id: "HTML",
+    title: "HTML",
+    experience: "4 Years Experience"
+  },
+  {
+    id: "CSS",
+    title: "CSS",
+    experience: "4 Years Experience"
+  },
+  {
+    id: "JavaScript",
+    title: "JavaScript",
+    experience: "4 Years Experience"
+  },
+  {
+    id: "Accessibility",
+    title: "Accessibility",
+    experience: "4 Years Experience"
+  },
+  {
+    id: "React",
+    title: "React",
+    experience: "3 Years Experience"
+  },
+  {
+    id: "Sass",
+    title: "Sass",
+    experience: "3 Years Experience"
+  },
+];
