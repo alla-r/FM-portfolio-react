@@ -5,8 +5,8 @@ import "./SkillsSection.scss";
 const SkillsSection = () => {
   const skills = SKILLS_DATA.map(({ id, title, experience }) => {
     return (
-      <div key={id} className="skills--item">
-        <h4 className="skills--title">{title}</h4>
+      <div key={id} className="skills__item">
+        <h4 className="skills__title">{title}</h4>
         <p className="skills--experience">{experience}</p>
       </div>
     );
@@ -15,8 +15,8 @@ const SkillsSection = () => {
   return (
     <section className="skills container">
       <h2 className="visually-hidden">Skills & Experience</h2>
-      <div className="skills--wrapper">{skills}</div>
-      <img className="skills--rings" src={Rings} alt="rings" />
+      <div className="skills__wrapper">{skills}</div>
+      <img className="skills__rings" src={Rings} alt="rings" />
     </section>
   );
 };

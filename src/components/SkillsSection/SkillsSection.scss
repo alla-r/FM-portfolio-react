@@ -3,14 +3,14 @@
   padding-bottom: 40px;
   border-bottom: 1px solid var(--color-white, #fff);
 
-  .skills--wrapper {
+  .skills__wrapper {
     margin-top: 40px;
 
-    div.skills--item {
+    div.skills__item {
       margin-bottom: 24px;
       text-align: center;
 
-      .skills--title {
+      .skills__title {
         margin: 0;
         font-size: 2rem;
         font-weight: 700;
@@ -19,7 +19,7 @@
         color: var(--color-white, #fff);
       }
 
-      .skills--experience {
+      .skills__experience {
         margin: 0;
         color: var(--color-grey, #d9d9d9);
         font-size: 1rem;
@@ -33,7 +33,7 @@
     }
   }
 
-  .skills--rings {
+  .skills__rings {
     display: block;
     position: absolute;
     bottom: 0;
@@ -47,23 +47,23 @@
   .skills {
     border-bottom: none;
 
-    .skills--wrapper {
+    .skills__wrapper {
       margin-top: 52px;
       display: flex;
       flex-wrap: wrap;
 
-      div.skills--item {
+      div.skills__item {
         margin-bottom: 52px;
         width: 50%;
         text-align: left;
 
-        .skills--title {
+        .skills__title {
           font-size: 3rem;
           line-height: 3.5rem;
           letter-spacing: -0.09375rem;
         }
 
-        .skills--experience {
+        .skills__experience {
           margin-top: 14px;
           font-size: 1.125rem;
           line-height: 1.75rem;
@@ -75,7 +75,7 @@
       }
     }
 
-    .skills--rings {
+    .skills__rings {
       translate: 40% -20%;
     }
   }
@@ -84,10 +84,10 @@
 /* DESKTOP > 1000px */
 @media only screen and (min-width: 63.5em) {
   .skills {
-    .skills--wrapper {
+    .skills__wrapper {
       margin-top: 72px;
 
-      div.skills--item {
+      div.skills__item {
         margin-bottom: 58px;
         width: 33.3%;
       }
@@ -99,7 +99,7 @@
       }
     }
 
-    .skills--rings {
+    .skills__rings {
       left: 100%;
       translate: -25% 10%;
     }
