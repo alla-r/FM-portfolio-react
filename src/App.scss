@@ -8,21 +8,62 @@
   max-width: 21.4375rem;
   margin: 0 auto;
 
-  @media only screen and (min-width: 37.5em) {
-    width: calc(100vw - 3.75rem);
-    max-width: 44.125rem;
+  .visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
   }
 
-  @media only screen and (min-width: 63.5em) {
-    max-width: 69.375rem;
+  .main-button {
+    padding-bottom: 10px;
+    color: var(--color-white, #fff);
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+    letter-spacing: 0.14288rem;
+    text-transform: uppercase;
+    border-bottom: 0.125rem solid var(--color-green, #4ee1a0);
+
+    &:hover {
+      color: var(--color-green, #4ee1a0);
+      cursor: pointer;
+    }
+  }
+
+  .main-title {
+    color: var(--color-white, #fff);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.071rem;
   }
 }
 
-.visually-hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+@media only screen and (min-width: 37.5em) {
+  .container {
+    width: calc(100vw - 3.75rem);
+    max-width: 44.125rem;
+
+    .main-title {
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+      letter-spacing: -0.12781rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 63.5em) {
+  .container {
+    max-width: 69.375rem;
+
+    .main-title {
+      font-size: 5.5rem;
+      line-height: 5.5rem;
+      letter-spacing: -0.15625rem;
+    }
+  }
 }
