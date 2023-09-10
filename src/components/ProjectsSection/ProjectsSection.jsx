@@ -2,6 +2,7 @@ import { PROJECTS_DATA, PROJECTS_BUTTONS_TEXT } from "../../constants";
 import "./ProjectsSection.scss";
 
 const ProjectsSection = () => {
+  // TODO: DESKTOP version
   const projects = PROJECTS_DATA.data.map(
     ({ id, title, imgSrcSmall, imgSrcLarge, technologies }) => {
       return (
@@ -36,9 +37,9 @@ const ProjectsSection = () => {
     <section className="projects container">
       <div className="projects__header">
         <h2 className="main-title">{PROJECTS_DATA.title}</h2>
-        <button className="main-button">
+        <a href="#contact-form" className="main-button">
           {PROJECTS_BUTTONS_TEXT.CONTACT_ME}
-        </button>
+        </a>
       </div>
       <div className="projects__wrapper">{projects}</div>
     </section>

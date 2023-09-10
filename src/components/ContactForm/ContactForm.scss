@@ -1,0 +1,88 @@
+.contact-form {
+  // position: relative;
+  padding-top: 60px;
+  text-align: center;
+  background-color: var(--color-dark-grey, #242424);
+
+  .container {
+    border-bottom: 1px solid var(--color-white, #fff);
+  }
+
+  .contact-form__wrapper {
+    padding-bottom: 87px;
+
+    .contact-form__description {
+      margin-top: 20px;
+      color: var(--color-grey, #d9d9d9);
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.625rem;
+    }
+
+    .form {
+      text-align: right;
+    }
+  }
+
+  // .skills__rings {
+  //   display: block;
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 50%;
+  //   translate: 0 50%;
+  // }
+}
+
+@media only screen and (min-width: 37.5em) {
+  .contact-form {
+    .contact-form__wrapper {
+      padding-bottom: 92px;
+      margin: 0 auto;
+      max-width: 445px;
+
+      .contact-form__description {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+
+      .form {
+      }
+    }
+
+    // .skills__rings {
+    //   bottom: 0;
+    //   left: 50%;
+    //   translate: 0 50%;
+    // }
+  }
+}
+
+@media only screen and (min-width: 63.5em) {
+  .contact-form {
+    padding-top: 84px;
+
+    .contact-form__wrapper {
+      max-width: 100%;
+      text-align: left;
+      display: flex;
+
+      .contact-form__info {
+        width: 50%;
+
+        .contact-form__description {
+          max-width: 445px;
+        }
+      }
+
+      .form {
+        width: 50%;
+      }
+    }
+
+    // .skills__rings {
+    //   bottom: 0;
+    //   left: 50%;
+    //   translate: 0 50%;
+    // }
+  }
+}

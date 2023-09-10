@@ -139,3 +139,10 @@ export const PROJECTS_BUTTONS_TEXT = {
   VIEW_PROJECT: "View project",
   VIEW_CODE: "View code",
 };
+
+export const FORM_DATA = {
+  title: "Contact",
+  description: `I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.`,
+  buttonText: "SEND MESSAGE",
+  data: []
+}

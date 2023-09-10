@@ -18,9 +18,9 @@ const HeroSection = () => {
             <br /> meet you! I&apos;m <strong>Adam Keyes</strong>.
           </h1>
           <h2>{constants.HERO_DESCRIPTION}</h2>
-          <button className="hero__contact-button main-button">
+          <a href="#contact-form" className="hero__contact-button main-button">
             {constants.HERO_BUTTON}
-          </button>
+          </a>
         </div>
 
         <picture>
