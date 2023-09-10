@@ -2,20 +2,23 @@ import * as constants from "../../constants";
 import profileImageDesktop from "../../assets/images/image-profile-desktop.webp";
 import profileImageTablet from "../../assets/images/image-profile-tablet.webp";
 import profileImageMobile from "../../assets/images/image-profile-mobile.webp";
+import Rings from "../../assets/images/pattern-rings.svg";
+import Circle from "../../assets/images/pattern-circle.svg";
 import "./HeroSection.scss";
 
 const HeroSection = () => {
-  //TODO add circles
+  //TODO refactoring imgsrc as constants
   return (
     <section className="hero">
       <div className="hero__content-wrapper container">
+        <img className="hero__rings" src={Rings} alt="rings" />
         <div className="hero__content-info">
           <h1>
             Nice to
             <br /> meet you! I&apos;m <strong>Adam Keyes</strong>.
           </h1>
           <h2>{constants.HERO_DESCRIPTION}</h2>
-          <button className="hero__contact-button">
+          <button className="hero__contact-button main-button">
             {constants.HERO_BUTTON}
           </button>
         </div>
@@ -29,6 +32,7 @@ const HeroSection = () => {
             alt="profile image"
           />
         </picture>
+        <img className="hero__circle" src={Circle} alt="circle" />
       </div>
     </section>
   );
