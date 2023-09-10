@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import { HEADER_LOGO_TEXT, HEADER_NAV_LINK_CONFIG } from "../../constants";
-import "./Header.scss";
+import "./HeaderFooter.scss";
 
-const Header = () => {
+const HeaderFooter = ({ isHeader = true }) => {
   const links = HEADER_NAV_LINK_CONFIG.map(
     ({ id, url, title, width, height, fillRule, d }) => {
       return (
@@ -27,9 +28,12 @@ const Header = () => {
     }
   );
 
+  const getWrapper = (...children) =>
+    isHeader ? <header>{children}</header> : <footer className='footer'>{children}</footer>;
+
   return (
     <>
-      <header>
+      {getWrapper(
         <div className="container">
           <nav className="header__nav">
             <a href="#" className="header__logo">
@@ -39,9 +43,13 @@ const Header = () => {
             {links}
           </nav>
         </div>
-      </header>
+      )}
     </>
   );
 };
 
-export default Header;
+HeaderFooter.propTypes = {
+  isHeader: PropTypes.bool
+}
+
+export default HeaderFooter;
