@@ -1,3 +1,6 @@
+import ProfileImageDesktop from "./assets/images/image-profile-desktop.webp";
+import ProfileImageTablet from "./assets/images/image-profile-tablet.webp";
+import ProfileImageMobile from "./assets/images/image-profile-mobile.webp";
 import ProjectThumbnailSmall1 from "./assets/images/thumbnail-project-1-small.webp";
 import ProjectThumbnailSmall2 from "./assets/images/thumbnail-project-2-small.webp";
 import ProjectThumbnailSmall3 from "./assets/images/thumbnail-project-3-small.webp";
@@ -52,6 +55,11 @@ export const HEADER_NAV_LINK_CONFIG = [
 export const HERO_DESCRIPTION =
   "Based in the UK, I'm a front-end developer passionate about building accessible web apps that users love.";
 export const HERO_BUTTON = "Contact me";
+export const HERO_IMAGES = {
+  mobile: ProfileImageMobile,
+  tablet: ProfileImageTablet,
+  desktop: ProfileImageDesktop,
+}
 
 export const SKILLS_DATA = [
   {
