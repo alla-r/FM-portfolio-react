@@ -5,10 +5,6 @@
     justify-content: space-between;
     align-items: center;
 
-    h2 {
-      margin: 0;
-    }
-
     button {
       height: 36px;
     }
@@ -81,7 +77,11 @@
 
 @media only screen and (min-width: 63.5em) {
   .projects {
+    .projects__header {
+      margin-top: 85px;
+    }
     .projects__wrapper {
+      gap: 69px 24px;
     }
   }
 }
