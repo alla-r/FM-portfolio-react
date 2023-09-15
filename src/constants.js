@@ -152,5 +152,26 @@ export const FORM_DATA = {
   title: "Contact",
   description: `I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.`,
   buttonText: "SEND MESSAGE",
-  data: []
+  data: [
+    {
+      id: "name",
+      label: "Name",
+      placeholder: "Name",
+      type: "input",
+      inputType: "text"
+    },
+    {
+      id: "email",
+      label: "Email",
+      placeholder: "Email",
+      type: "input",
+      inputType: "email"
+    },
+    {
+      id: "message",
+      label: "Message",
+      placeholder: "Message",
+      type: "textarea"
+    }
+  ]
 }
