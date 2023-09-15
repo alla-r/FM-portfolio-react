@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { HEADER_LOGO_TEXT, HEADER_NAV_LINK_CONFIG } from "../../constants";
 import "./HeaderFooter.scss";
 
@@ -28,28 +28,31 @@ const HeaderFooter = ({ isHeader = true }) => {
     }
   );
 
-  const getWrapper = (...children) =>
-    isHeader ? <header>{children}</header> : <footer className='footer'>{children}</footer>;
+  const content = (
+    <div className="container">
+      <nav className="header__nav">
+        <a href="#" className="header__logo">
+          {HEADER_LOGO_TEXT}
+          <span className="visually-hidden">(to home page)</span>
+        </a>
+        {links}
+      </nav>
+    </div>
+  );
 
   return (
     <>
-      {getWrapper(
-        <div className="container">
-          <nav className="header__nav">
-            <a href="#" className="header__logo">
-              {HEADER_LOGO_TEXT}
-              <span className="visually-hidden">(to home page)</span>
-            </a>
-            {links}
-          </nav>
-        </div>
+      {isHeader ? (
+        <header>{content}</header>
+      ) : (
+        <footer className="footer">{content}</footer>
       )}
     </>
   );
 };
 
 HeaderFooter.propTypes = {
-  isHeader: PropTypes.bool
-}
+  isHeader: PropTypes.bool,
+};
 
 export default HeaderFooter;
