@@ -1,5 +1,6 @@
 .form__control {
   margin-bottom: 32px;
+  position: relative;
 
   .form__text-field {
     width: 100%;
@@ -33,6 +34,13 @@
 
   textarea {
     height: 107px;
+  }
+
+  .form__error-icon {
+    position: absolute;
+    right: 0%;
+    width: 24px;
+    height: 24px;
   }
 
   .form__error-message {

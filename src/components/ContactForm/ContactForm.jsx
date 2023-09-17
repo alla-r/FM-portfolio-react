@@ -12,16 +12,24 @@ const ContactForm = () => {
     // TODO: sent data
   };
 
-  const { values, errors, touched, isSubmitting, handleSubmit, handleChange, handleBlur } =
-    useFormik({
-      initialValues: {
-        name: '',
-        email: '',
-        message: '',
-      },
-      validationSchema: CONTACT_FORM_SCHEMA,
-      onSubmit: onSubmitCallback,
-    });
+  const {
+    values,
+    errors,
+    touched,
+    isSubmitting,
+    handleSubmit,
+    handleChange,
+    handleBlur,
+    setFieldTouched,
+  } = useFormik({
+    initialValues: {
+      name: '',
+      email: '',
+      message: '',
+    },
+    validationSchema: CONTACT_FORM_SCHEMA,
+    onSubmit: onSubmitCallback,
+  });
 
   const fields = FORM_DATA.data.map(({ id, label, placeholder, type, inputType }) => {
     return (
@@ -35,6 +43,7 @@ const ContactForm = () => {
         value={values[id]}
         onChange={handleChange}
         onBlur={handleBlur}
+        onFocus={() => setFieldTouched(id, false)}
         isError={errors[id] && touched[id]}
         errorText={errors[id]}
       />
