@@ -26,8 +26,8 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: var(--color-black, #000);
-  color: var(--color-white, #FFF);
-  font-family: "Space Grotesk", sans-serif;
+  color: var(--color-white, #fff);
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 a {
@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-green, #4EE1A0);
+  color: var(--color-green, #4ee1a0);
 }
 
 a > svg path {
@@ -46,7 +46,7 @@ a > svg path {
 }
 
 a:hover > svg path {
-  fill: var(--color-green, #4EE1A0);
+  fill: var(--color-green, #4ee1a0);
 }
 
 button {
@@ -55,7 +55,7 @@ button {
   border: none;
   text-shadow: none;
   background-color: transparent;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 h1,

@@ -1,6 +1,6 @@
-import { SKILLS_DATA } from "../../constants";
-import Rings from "../../assets/images/pattern-rings.svg";
-import "./SkillsSection.scss";
+import { SKILLS_DATA } from '../../constants';
+import Rings from '../../assets/images/pattern-rings.svg';
+import './SkillsSection.scss';
 
 const SkillsSection = () => {
   const skills = SKILLS_DATA.map(({ id, title, experience }) => {

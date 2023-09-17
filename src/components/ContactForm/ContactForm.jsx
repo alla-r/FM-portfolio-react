@@ -1,9 +1,9 @@
-import { useFormik } from "formik";
-import { FORM_DATA } from "../../constants";
+import { useFormik } from 'formik';
+import { FORM_DATA } from '../../constants';
 // import Rings from "../../assets/images/pattern-rings.svg";
-import InputField from "./InputField";
-import { CONTACT_FORM_SCHEMA } from "../../validationSchema";
-import "./ContactForm.scss";
+import InputField from './InputField';
+import { CONTACT_FORM_SCHEMA } from '../../validationSchema';
+import './ContactForm.scss';
 
 const ContactForm = () => {
   const onSubmitCallback = (values, actions) => {
@@ -15,33 +15,31 @@ const ContactForm = () => {
   const { values, errors, touched, isSubmitting, handleSubmit, handleChange, handleBlur } =
     useFormik({
       initialValues: {
-        name: "",
-        email: "",
-        message: "",
+        name: '',
+        email: '',
+        message: '',
       },
       validationSchema: CONTACT_FORM_SCHEMA,
       onSubmit: onSubmitCallback,
     });
 
-  const fields = FORM_DATA.data.map(
-    ({ id, label, placeholder, type, inputType }) => {
-      return (
-        <InputField
-          key={id}
-          label={label}
-          placeholder={placeholder}
-          type={type}
-          inputType={inputType}
-          id={id}
-          value={values[id]}
-          onChange={handleChange}
-          onBlur={handleBlur}
-          isError={errors[id] && touched[id]}
-          errorText={errors[id]}
-        />
-      );
-    }
-  );
+  const fields = FORM_DATA.data.map(({ id, label, placeholder, type, inputType }) => {
+    return (
+      <InputField
+        key={id}
+        label={label}
+        placeholder={placeholder}
+        type={type}
+        inputType={inputType}
+        id={id}
+        value={values[id]}
+        onChange={handleChange}
+        onBlur={handleBlur}
+        isError={errors[id] && touched[id]}
+        errorText={errors[id]}
+      />
+    );
+  });
 
   // TODO: rings design + move form logic to a component
   return (

@@ -1,5 +1,5 @@
-import { PROJECTS_DATA, PROJECTS_BUTTONS_TEXT } from "../../constants";
-import "./ProjectsSection.scss";
+import { PROJECTS_DATA, PROJECTS_BUTTONS_TEXT } from '../../constants';
+import './ProjectsSection.scss';
 
 const ProjectsSection = () => {
   // TODO: DESKTOP version
@@ -7,11 +7,7 @@ const ProjectsSection = () => {
     ({ id, title, imgSrcSmall, imgSrcLarge, technologies }) => {
       return (
         <div key={id} className="projects__item">
-          <img
-            className="projects__thumbnail"
-            src={imgSrcSmall}
-            alt="thumbnail 1"
-          />
+          <img className="projects__thumbnail" src={imgSrcSmall} alt="thumbnail 1" />
           <div className="projects__title">{title}</div>
           <div className="projects__technologies">
             {technologies.map((el, i) => (
@@ -21,16 +17,12 @@ const ProjectsSection = () => {
             ))}
           </div>
           <div className="projects__buttons">
-            <button className="main-button">
-              {PROJECTS_BUTTONS_TEXT.VIEW_PROJECT}
-            </button>
-            <button className="main-button">
-              {PROJECTS_BUTTONS_TEXT.VIEW_CODE}
-            </button>
+            <button className="main-button">{PROJECTS_BUTTONS_TEXT.VIEW_PROJECT}</button>
+            <button className="main-button">{PROJECTS_BUTTONS_TEXT.VIEW_CODE}</button>
           </div>
         </div>
       );
-    }
+    },
   );
 
   return (

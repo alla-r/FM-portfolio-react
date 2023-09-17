@@ -1,7 +1,7 @@
-import { HERO_DESCRIPTION, HERO_BUTTON, HERO_IMAGES } from "../../constants";
-import Rings from "../../assets/images/pattern-rings.svg";
-import Circle from "../../assets/images/pattern-circle.svg";
-import "./HeroSection.scss";
+import { HERO_DESCRIPTION, HERO_BUTTON, HERO_IMAGES } from '../../constants';
+import Rings from '../../assets/images/pattern-rings.svg';
+import Circle from '../../assets/images/pattern-circle.svg';
+import './HeroSection.scss';
 
 const HeroSection = () => {
   return (
@@ -22,11 +22,7 @@ const HeroSection = () => {
         <picture>
           <source media="(min-width: 63.5em)" srcSet={HERO_IMAGES.desktop} />
           <source media="(min-width: 37.5em)" srcSet={HERO_IMAGES.tablet} />
-          <img
-            className="hero__profile-image"
-            src={HERO_IMAGES.mobile}
-            alt="profile image"
-          />
+          <img className="hero__profile-image" src={HERO_IMAGES.mobile} alt="profile image" />
         </picture>
         <img className="hero__circle" src={Circle} alt="circle" />
       </div>

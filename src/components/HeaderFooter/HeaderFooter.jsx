@@ -1,32 +1,24 @@
-import PropTypes from "prop-types";
-import { HEADER_LOGO_TEXT, HEADER_NAV_LINK_CONFIG } from "../../constants";
-import "./HeaderFooter.scss";
+import PropTypes from 'prop-types';
+import { HEADER_LOGO_TEXT, HEADER_NAV_LINK_CONFIG } from '../../constants';
+import './HeaderFooter.scss';
 
 const HeaderFooter = ({ isHeader = true }) => {
-  const links = HEADER_NAV_LINK_CONFIG.map(
-    ({ id, url, title, width, height, fillRule, d }) => {
-      return (
-        <a
-          key={id}
-          href={url}
-          target="_blank"
-          className="header__social-link"
-          rel="noreferrer"
+  const links = HEADER_NAV_LINK_CONFIG.map(({ id, url, title, width, height, fillRule, d }) => {
+    return (
+      <a key={id} href={url} target="_blank" className="header__social-link" rel="noreferrer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={width}
+          height={height}
+          role="img"
+          aria-labelledby={id}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width={width}
-            height={height}
-            role="img"
-            aria-labelledby={id}
-          >
-            <title id={id}>{title}</title>
-            <path fill="#FFF" fillRule={fillRule} d={d} />
-          </svg>
-        </a>
-      );
-    }
-  );
+          <title id={id}>{title}</title>
+          <path fill="#FFF" fillRule={fillRule} d={d} />
+        </svg>
+      </a>
+    );
+  });
 
   const content = (
     <div className="container">
@@ -41,13 +33,7 @@ const HeaderFooter = ({ isHeader = true }) => {
   );
 
   return (
-    <>
-      {isHeader ? (
-        <header>{content}</header>
-      ) : (
-        <footer className="footer">{content}</footer>
-      )}
-    </>
+    <>{isHeader ? <header>{content}</header> : <footer className="footer">{content}</footer>}</>
   );
 };
 
