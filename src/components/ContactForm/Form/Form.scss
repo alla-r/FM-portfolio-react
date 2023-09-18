@@ -1,0 +1,10 @@
+.form {
+  margin-top: 50px;
+  text-align: right;
+}
+
+@media only screen and (min-width: 63.5em) {
+  .form {
+    width: 50%;
+  }
+}
