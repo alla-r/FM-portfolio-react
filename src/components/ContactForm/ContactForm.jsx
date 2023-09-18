@@ -1,6 +1,6 @@
 import { useFormik } from 'formik';
 import { FORM_DATA } from '../../constants';
-// import Rings from "../../assets/images/pattern-rings.svg";
+import Rings from '../../assets/images/pattern-rings.svg';
 import InputField from './InputField';
 import { CONTACT_FORM_SCHEMA } from '../../validationSchema';
 import './ContactForm.scss';
@@ -66,8 +66,8 @@ const ContactForm = () => {
             </button>
           </form>
         </div>
+        <img className="contact-form__rings" src={Rings} alt="rings" />
       </div>
-      {/* <img className="skills__rings" src={Rings} alt="rings" /> */}
     </section>
   );
 };
