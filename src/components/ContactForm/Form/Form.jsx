@@ -8,7 +8,6 @@ const Form = () => {
   const onSubmitCallback = (values, actions) => {
     console.log(values);
     actions.resetForm();
-    // TODO: sent data
   };
 
   const {
