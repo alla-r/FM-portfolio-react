@@ -22,7 +22,7 @@ const HeaderFooter = ({ isHeader = true }) => {
 
   const content = (
     <div className="container">
-      <nav className="header__nav">
+      <nav role="navigation" aria-label="Social medias" className="header__nav">
         <a href="#" className="header__logo">
           {HEADER_LOGO_TEXT}
           <span className="visually-hidden">(to home page)</span>
