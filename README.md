@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/alla-r/FM-portfolio-react)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/alla-r/FM-portfolio-react]
+- Live Site URL: [https://alla-r.github.io/FM-portfolio-react/]
 
 ## My process
 
