@@ -5,7 +5,7 @@ import './HeaderFooter.scss';
 const HeaderFooter = ({ isHeader = true }) => {
   const links = HEADER_NAV_LINK_CONFIG.map(({ id, url, title, width, height, fillRule, d }) => {
     return (
-      <a key={id} href={url} target="_blank" className="header__social-link" rel="noreferrer">
+      <a key={`key-${id}`} href={url} target="_blank" className="header__social-link" rel="noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={width}

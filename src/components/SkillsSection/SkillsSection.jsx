@@ -6,7 +6,7 @@ const SkillsSection = () => {
   const skills = SKILLS_DATA.map(({ id, title, experience }) => {
     return (
       <div key={id} className="skills__item">
-        <h4 className="skills__title">{title}</h4>
+        <h3 className="skills__title">{title}</h3>
         <p className="skills--experience">{experience}</p>
       </div>
     );
