@@ -84,6 +84,7 @@
 
 @media only screen and (min-width: 37.5em) {
   .hero {
+    min-height: 100vh;
     margin-block-start: -74px;
 
     .hero__content-wrapper {
@@ -135,7 +136,7 @@
 
       .hero__circle {
         left: 100%;
-        translate: -50% 463px;
+        translate: -50% 466px;
       }
 
       .hero__profile-image {
@@ -154,12 +155,14 @@
     margin-block-start: -80px;
 
     .hero__content-wrapper {
+      position: relative;
       padding-bottom: 104px;
       justify-content: space-between;
 
       .hero__content-info {
         flex: 1;
         margin-right: -67px;
+        margin-block-start: 198px;
 
         h1 {
           width: 45rem;
@@ -179,17 +182,18 @@
       }
 
       .hero__rings {
-        translate: -50% 75%;
+        translate: 0;
+        top: 133px;
+        left: -25%;
       }
 
       .hero__circle {
         left: 50%;
-        translate: 69.5px 490px;
+        translate: 46.5px 530px;
       }
 
       .hero__profile-image {
-        min-width: 424px;
-        max-width: 446px;
+        width: 445px;
       }
     }
   }
